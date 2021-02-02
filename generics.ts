@@ -3,6 +3,7 @@
 // K => Key
 // V => Value
 // E => Element
+// P => Properties
 
 function useState<S extends number | string = string>(){
   let state: S;
@@ -19,7 +20,7 @@ function useState<S extends number | string = string>(){
 
 const newState = useState();
 newState.setState("foo");
-newState.setState(2);
+//newState.setState(2);
 console.log(newState.getState());
 
 
